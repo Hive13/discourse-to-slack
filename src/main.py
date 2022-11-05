@@ -27,7 +27,7 @@ def home_route_post():
     # is the message too long?
     if len(incoming_request['post']['raw']) > 1501:
         logging.error(incoming_request)
-        incoming_request['post']['raw'] = incoming_request['post']['raw'].split(:1500) 
+        incoming_request['post']['raw'] = incoming_request['post']['raw'][:1500] 
     
     # shape request for slack
     data = {
