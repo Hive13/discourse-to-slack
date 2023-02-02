@@ -36,6 +36,13 @@ python3 src/main.py &
 
 `python3 src/main.py &` - run the python script so that when you exit the program or kill the ssh stream
 
+## Build & run using Docker
+
+```shell
+docker build -t discourse-to-slack .
+docker run -dit --name discourse-to-slack --restart unless-stopped -p42069:42069 discourse-to-slack
+```
+
 ## Todo
 
 - [ ] relative config file loading
