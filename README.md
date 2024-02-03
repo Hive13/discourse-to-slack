@@ -24,6 +24,13 @@ cd hive13-discourse-to-slack
 pip install -r requirements.txt
 ```
 
+Create a config.json file with slack endpoint details
+```json
+{
+  "slack_url": "https://hooks.slack.com/services/<your-hook-url-path>"
+}
+```
+
 ### Run it
 
 ```shell
